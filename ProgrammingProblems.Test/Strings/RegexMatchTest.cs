@@ -1,8 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
-using ProgrammingProblems.Strings;
+using ProgrammingProblems;
 
-namespace ProgrammingProblems.Test.Strings
+namespace ProgrammingProblems.Test
 {
     ///<summary>
     ///  This is a test class for RegexMatchTest and is intended

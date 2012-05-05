@@ -1,24 +1,24 @@
 ﻿using System;
 using NUnit.Framework;
-using ProgrammingProblems.Strings;
+using ProgrammingProblems;
 
-namespace ProgrammingProblems.Test.Strings
+namespace ProgrammingProblems.Test
 {
     [TestFixture]
-    public class CharacterSearchTest
+    public class StringsTest
     {
         [Test]
         [ExpectedException(typeof (ArgumentNullException))]
         public void TestEmptyStringInput()
         {
-            CharacterSearch.HasUniqueCharacters(string.Empty);
+            Strings.HasUniqueCharacters(string.Empty);
         }
 
         [Test]
         [ExpectedException(typeof (ArgumentNullException))]
         public void TestNullStringInput()
         {
-            CharacterSearch.HasUniqueCharacters(null);
+            Strings.HasUniqueCharacters(null);
         }
 
         [Test]
@@ -26,7 +26,7 @@ namespace ProgrammingProblems.Test.Strings
         public void TestStringInput()
         {
             string str = "\r\n";
-            CharacterSearch.HasUniqueCharacters(str);
+            Strings.HasUniqueCharacters(str);
         }
     }
 }

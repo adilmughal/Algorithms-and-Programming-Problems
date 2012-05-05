@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
-using ProgrammingProblems.Strings;
+using ProgrammingProblems;
 
-namespace ProgrammingProblems.Test.Strings
+namespace ProgrammingProblems.Test
 {
     [TestFixture]
     public class ManipulationRemoveSpecifiedCharactersTest
@@ -11,8 +11,7 @@ namespace ProgrammingProblems.Test.Strings
         {
             string input = "adil ahmed mughal";
             string toRemove = "m";
-            Assert.AreEqual("adil ahed ughal",
-                            Manipulation.RemoveSpecifiedCharacters(input, toRemove));
+            Assert.AreEqual("adil ahed ughal", ProgrammingProblems.Strings.RemoveSpecifiedCharacters(input, toRemove));
 
         }
     }

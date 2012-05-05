@@ -1,8 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
-using ProgrammingProblems.Numeric;
+using ProgrammingProblems;
 
-namespace ProgrammingProblems.Test.Numeric
+namespace ProgrammingProblems.Test
 {
     [TestFixture]
     public class FibonacciTest
@@ -12,7 +12,7 @@ namespace ProgrammingProblems.Test.Numeric
         {
             int max = 10;
             int[] expected = {0, 1, 1, 2, 3, 5, 8};
-            CollectionAssert.AreEqual(expected, Fibonacci.IterativeFibonacci(max));
+            CollectionAssert.AreEqual(expected, Numeric.IterativeFibonacci(max));
         }
 
         [Test]
@@ -20,7 +20,7 @@ namespace ProgrammingProblems.Test.Numeric
         {
             int max = 0;
             int[] expected = { 0 };
-            CollectionAssert.AreEqual(expected, Fibonacci.IterativeFibonacci(max));
+            CollectionAssert.AreEqual(expected, Numeric.IterativeFibonacci(max));
         }
 
         [Test]
@@ -28,7 +28,7 @@ namespace ProgrammingProblems.Test.Numeric
         {
             int max = -1;
             int[] expected = { 0 };
-            CollectionAssert.AreEqual(expected, Fibonacci.IterativeFibonacci(max));
+            CollectionAssert.AreEqual(expected, Numeric.IterativeFibonacci(max));
         }
 
 
@@ -37,7 +37,7 @@ namespace ProgrammingProblems.Test.Numeric
         {
             int max = 13;
             int[] expected = { 0, 1, 1, 2, 3, 5, 8, 13 };
-            CollectionAssert.AreEqual(expected, Fibonacci.IterativeFibonacci(max));
+            CollectionAssert.AreEqual(expected, Numeric.IterativeFibonacci(max));
         }
 
         [Test]
@@ -46,7 +46,7 @@ namespace ProgrammingProblems.Test.Numeric
             int max = 10;
   //          int[] expected = { 0, 1, 1, 2, 3, 5, 8 };
             int expected = 8;
-            int actual = Fibonacci.RecursiveFibonacci(10);
+            int actual = Numeric.RecursiveFibonacci(10);
             Assert.AreEqual(8, actual);
         }
 
@@ -55,7 +55,7 @@ namespace ProgrammingProblems.Test.Numeric
         {
             int max = 0;
             int[] expected = { 0 };
-            Assert.AreEqual(0, Fibonacci.RecursiveFibonacci(max));
+            Assert.AreEqual(0, Numeric.RecursiveFibonacci(max));
         }
 
         [Test]
@@ -63,7 +63,7 @@ namespace ProgrammingProblems.Test.Numeric
         {
             int max = -1;
             int[] expected = { 0 };
-            Assert.AreEqual(0, Fibonacci.RecursiveFibonacci(max));
+            Assert.AreEqual(0, Numeric.RecursiveFibonacci(max));
         }
 
 
@@ -72,7 +72,7 @@ namespace ProgrammingProblems.Test.Numeric
         {
             int max = 13;
             int[] expected = { 0, 1, 1, 2, 3, 5, 8, 13 };
-            Assert.AreEqual(13, Fibonacci.RecursiveFibonacci(max));
+            Assert.AreEqual(13, Numeric.RecursiveFibonacci(max));
         }
     }
 }

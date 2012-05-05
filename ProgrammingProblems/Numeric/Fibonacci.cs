@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-namespace ProgrammingProblems.Numeric
+namespace ProgrammingProblems
 {
-    public class Fibonacci
+    public partial class Numeric
     {
         public static int[] IterativeFibonacci(int max)
         {

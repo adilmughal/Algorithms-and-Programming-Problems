@@ -1,8 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
-using ProgrammingProblems.Arrays;
+using ProgrammingProblems;
 
-namespace ProgrammingProblems.Test.Arrarys
+namespace ProgrammingProblems.Test
 {
     [TestFixture]
     public class SortingTest
@@ -58,7 +58,7 @@ namespace ProgrammingProblems.Test.Arrarys
         {
             char[] balls = { 'Y', 'R', 'G' };
             char[] expected = { 'G', 'R', 'Y' };
-            CollectionAssert.AreEqual(expected, Sorting.SortColoredBalls(balls));
+            CollectionAssert.AreEqual(expected, Sorting.ColoredBallsSort(balls));
         }
 
         [Test]
@@ -66,7 +66,7 @@ namespace ProgrammingProblems.Test.Arrarys
         {
             char[] balls = { 'Y', 'Y', 'Y' };
             char[] expected = { 'Y', 'Y', 'Y' };
-            CollectionAssert.AreEqual(expected, Sorting.SortColoredBalls(balls));
+            CollectionAssert.AreEqual(expected, Sorting.ColoredBallsSort(balls));
         }
 
         [Test]
@@ -74,7 +74,7 @@ namespace ProgrammingProblems.Test.Arrarys
         {
             char[] balls = { 'Y' };
             char[] expected = { 'Y' };
-            CollectionAssert.AreEqual(expected, Sorting.SortColoredBalls(balls));
+            CollectionAssert.AreEqual(expected, Sorting.ColoredBallsSort(balls));
         }
 
         [Test]
@@ -82,7 +82,7 @@ namespace ProgrammingProblems.Test.Arrarys
         {
             char[] balls = { 'R', 'G', 'Y', 'G', 'G', 'Y', 'R', 'R' };
             char[] expected = { 'G', 'G', 'G', 'R', 'R', 'R', 'Y', 'Y' };
-            CollectionAssert.AreEqual(expected, Sorting.SortColoredBalls(balls));
+            CollectionAssert.AreEqual(expected, Sorting.ColoredBallsSort(balls));
         }
 
         [Test]
@@ -91,7 +91,7 @@ namespace ProgrammingProblems.Test.Arrarys
             char[] balls = new char[10];
             char[] expected = new char[10];
 
-            CollectionAssert.AreEqual(expected, Sorting.SortColoredBalls(balls));
+            CollectionAssert.AreEqual(expected, Sorting.ColoredBallsSort(balls));
         }
 
         [Test]
@@ -100,7 +100,7 @@ namespace ProgrammingProblems.Test.Arrarys
             char[] balls = { '@', '%', ' ' };
             char[] expected = { '@', '%', ' ' };
 
-            CollectionAssert.AreEqual(expected, Sorting.SortColoredBalls(balls));
+            CollectionAssert.AreEqual(expected, Sorting.ColoredBallsSort(balls));
         }
 
         [Test]
@@ -109,7 +109,7 @@ namespace ProgrammingProblems.Test.Arrarys
             char[] balls = { 'r', 'g', 'y', 'g', 'g', 'y', 'r', 'r' };
             char[] expected = { 'g', 'g', 'g', 'r', 'r', 'r', 'y', 'y' };
 
-            CollectionAssert.AreEqual(expected, Sorting.SortColoredBalls(balls));
+            CollectionAssert.AreEqual(expected, Sorting.ColoredBallsSort(balls));
         }
     }
 }

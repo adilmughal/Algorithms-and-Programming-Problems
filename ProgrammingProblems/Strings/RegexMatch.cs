@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ProgrammingProblems.Strings
+namespace ProgrammingProblems
 {
     public class RegexMatch
     {

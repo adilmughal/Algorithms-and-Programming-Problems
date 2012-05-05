@@ -55,7 +55,6 @@
     <Compile Include="Strings\CharacterSearchTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strings\TextSearchNaiveSearch2Test.cs" />
-    <Compile Include="Strings\TextSearchNaiveSearchTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataStructure\DataStructure.csproj">
