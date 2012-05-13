@@ -5,7 +5,7 @@ using ProgrammingProblems;
 namespace ProgrammingProblems.Test
 {
     [TestFixture]
-    public class SortingTest
+    public partial class SortingTest
     {
         //#region Bubble Sort Test
         
