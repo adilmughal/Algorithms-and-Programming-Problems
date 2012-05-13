@@ -11,7 +11,9 @@
          *  RETURNS
          *  Input[a1',a2',a3',...,aN'] such that a1'<=a2'<=a3'... <=aN' AND N > 1
          *  
-         * 
+         *  Approach:
+         *  Iterative
+         *  
          *  Pseudocode:
          *  BEGIN
          *      LOOP (FOR) j=2 to N
