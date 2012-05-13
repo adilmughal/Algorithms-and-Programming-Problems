@@ -35,21 +35,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\MaxSubArrary.cs" />
-    <Compile Include="Numeric\MultiplyWithoutOperator.cs" />
     <Compile Include="Numeric\Fibonacci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sorting\BubbleSort.cs" />
-    <Compile Include="Sorting\ColoredBallsSort.cs" />
-    <Compile Include="Sorting\InsertionSort.cs" />
-    <Compile Include="Sorting\MergeSort.cs" />
-    <Compile Include="Strings\FirstRepeatedCharacter.cs" />
-    <Compile Include="Strings\HasUniqueCharacters.cs" />
     <Compile Include="Strings\Manipulation.cs" />
     <Compile Include="Strings\RegexMatch.cs" />
-    <Compile Include="Strings\RemoveSpecifiedCharacters.cs" />
-    <Compile Include="Strings\Reverse.cs" />
-    <Compile Include="Strings\ReverseWords.cs" />
-    <Compile Include="Searching\WordSearch.cs" />
     <Compile Include="TreesNGraphs\BinaryTreeTraversal.cs" />
     <Compile Include="TreesNGraphs\SubTreeWithLargestSum.cs" />
   </ItemGroup>
@@ -59,7 +48,10 @@
       <Name>DataStructure</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Searching\" />
+    <Folder Include="Sorting\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
