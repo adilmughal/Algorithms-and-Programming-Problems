@@ -48,10 +48,12 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adhoc\ThreeNplusOneTest.cs" />
     <Compile Include="Arrarys\SortingTest.cs" />
-    <Compile Include="Numeric\OperationAndManipulationTest.cs" />
+    <Compile Include="Numeric\DivideWithoutOperatorTest.cs" />
     <Compile Include="Numeric\FibonacciTest.cs" />
     <Compile Include="Sorting\InsertionSortTest.cs" />
+    <Compile Include="Sorting\MergeSortTest.cs" />
     <Compile Include="Strings\ManipulationRemoveSpecifiedCharactersTest.cs" />
     <Compile Include="Strings\RegexMatchTest.cs" />
     <Compile Include="Strings\CharacterSearchTest.cs" />
