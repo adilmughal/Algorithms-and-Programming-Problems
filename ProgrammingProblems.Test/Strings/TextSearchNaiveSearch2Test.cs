@@ -1,10 +1,7 @@
 ﻿using NUnit.Framework;
-using System;
-using ProgrammingProblems;
 
 namespace ProgrammingProblems.Test
 {
-
     [TestFixture]
     public class TextSearchNaiveSearch2Test
     {

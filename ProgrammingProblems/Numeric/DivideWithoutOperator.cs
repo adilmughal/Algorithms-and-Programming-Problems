@@ -23,7 +23,7 @@ namespace ProgrammingProblems
                 return -DivideWithoutOperator(-numerator, divider);
 
             int quotient = 0;
-            
+
             while (numerator >= divider)
             {
                 numerator = numerator - divider;
@@ -32,6 +32,4 @@ namespace ProgrammingProblems
             return quotient;
         }
     }
-
-
 }

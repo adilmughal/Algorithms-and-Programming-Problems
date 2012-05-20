@@ -29,7 +29,7 @@
         {
             if (low < high)
             {
-                int middle = (low + high) / 2; /* index of middle element */
+                int middle = (low + high)/2; /* index of middle element */
                 MergeSort(ref input, low, middle);
                 MergeSort(ref input, middle + 1, high);
                 Merge(ref input, low, middle, high);
@@ -41,8 +41,8 @@
         {
             int resultIndex = 0;
             int leftCounter = low;
-            int rightCounter = middle+1;
-            int[] resultSet = new int[high-low+1];
+            int rightCounter = middle + 1;
+            var resultSet = new int[high - low + 1];
 
             while (leftCounter <= middle && rightCounter <= high)
             {
@@ -59,7 +59,7 @@
                 resultIndex++;
             }
 
-            while (leftCounter <=middle)
+            while (leftCounter <= middle)
             {
                 resultSet[resultIndex++] = input[leftCounter++];
             }
@@ -116,5 +116,4 @@
         //    return sorted;
         //}
     }
-
 }

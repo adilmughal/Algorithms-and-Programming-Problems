@@ -13,7 +13,7 @@ namespace ProgrammingProblems
             if (regex.Length == 0)
                 throw new ArgumentException("regex");
 
-            Queue<char> queue = new Queue<char>(input);
+            var queue = new Queue<char>(input);
 
             int rIndex = 0;
 

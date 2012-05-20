@@ -1,22 +1,15 @@
 ﻿using System;
-using System.Collections;
 using System.Text;
 
 namespace ProgrammingProblems
 {
     public class Manipulation
     {
-
-
-     
-        
-        
-
         public static void Permute(string str)
         {
             int length = str.Length;
-            bool[] used = new bool[length];
-            StringBuilder output = new StringBuilder();
+            var used = new bool[length];
+            var output = new StringBuilder();
             char[] input = str.ToCharArray();
 
             DoPermute(input, output, used, length, 0);
@@ -39,7 +32,6 @@ namespace ProgrammingProblems
                 DoPermute(input, output, used, length, level + 1);
                 used[i] = false;
                 output.Length = output.Length - 1;
-
             }
         }
     }

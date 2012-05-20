@@ -36,12 +36,13 @@
   <ItemGroup>
     <Compile Include="Adhoc\ThreeNplusOne.cs" />
     <Compile Include="Arrays\MaxSubArrary.cs" />
-    <Compile Include="Adhoc\DivideWithoutOperator.cs" />
+    <Compile Include="Numeric\DivideWithoutOperator.cs" />
     <Compile Include="Numeric\Fibonacci.cs" />
     <Compile Include="Numeric\MultiplyWithoutOperator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sorting\InsertionSort.cs" />
     <Compile Include="Sorting\MergeSort.cs" />
+    <Compile Include="Strings\HasUniqueCharacters.cs" />
     <Compile Include="Strings\Manipulation.cs" />
     <Compile Include="Strings\RegexMatch.cs" />
     <Compile Include="TreesNGraphs\BinaryTreeTraversal.cs" />

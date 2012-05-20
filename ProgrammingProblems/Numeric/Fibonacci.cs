@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+
 namespace ProgrammingProblems
 {
     public partial class Numeric
@@ -6,9 +7,9 @@ namespace ProgrammingProblems
         public static int[] IterativeFibonacci(int max)
         {
             if (max < 1)
-                return new int[] { 0 };
+                return new[] {0};
 
-            List<int> result = new List<int>(new int[] { 0, 1 });
+            var result = new List<int>(new[] {0, 1});
 
             int n = 2;
 
@@ -27,7 +28,7 @@ namespace ProgrammingProblems
         {
             if (n == 0 || n == 1)
                 return n;
-        
+
             else if (n > 1)
                 return RecursiveFibonacci(n - 1) + RecursiveFibonacci(n - 2);
 

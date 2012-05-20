@@ -1,10 +1,10 @@
-﻿
-namespace DataStructure
+﻿namespace DataStructure
 {
     public class BinaryTreeNode
     {
         public BinaryTreeNode()
-        { }
+        {
+        }
 
         public BinaryTreeNode(int value)
         {

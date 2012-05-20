@@ -30,19 +30,18 @@
 
         public static int[] InsertionSort(int[] input)
         {
-            for (int j = 1; j < input.Length-1; j++)
+            for (int j = 1; j < input.Length - 1; j++)
             {
                 int i = j - 1;
                 int minKey = input[j];
-                while ( i>=0 && (input[i] >minKey))
+                while (i >= 0 && (input[i] > minKey))
                 {
                     input[i + 1] = input[i];
                     i = i - 1;
                 }
-                input[i+1] = minKey;
+                input[i + 1] = minKey;
             }
             return input;
         }
     }
-
 }

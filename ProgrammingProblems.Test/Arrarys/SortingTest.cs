@@ -1,6 +1,4 @@
-﻿using System;
-using NUnit.Framework;
-using ProgrammingProblems;
+﻿using NUnit.Framework;
 
 namespace ProgrammingProblems.Test
 {
@@ -8,7 +6,7 @@ namespace ProgrammingProblems.Test
     public partial class SortingTest
     {
         //#region Bubble Sort Test
-        
+
         //[Test]
         //public void BubbleSort_HappyFlow()
         //{
@@ -26,7 +24,7 @@ namespace ProgrammingProblems.Test
         //    int[] actual = Sorting.BubbleSort(input);
         //    CollectionAssert.AreEqual(expected, actual);
         //} 
-        
+
         //#endregion
 
         //#region Insertion Sort Test
@@ -50,7 +48,6 @@ namespace ProgrammingProblems.Test
         //}
 
         //#endregion
-
 
 
         //[Test]

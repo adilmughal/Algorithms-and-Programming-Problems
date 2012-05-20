@@ -1,11 +1,9 @@
-﻿using System;
-using NUnit.Framework;
-using ProgrammingProblems;
+﻿using NUnit.Framework;
 
 namespace ProgrammingProblems.Test
 {
     [TestFixture]
-    public class StringsTest
+    public partial class StringsTest
     {
         //[Test]
         //[ExpectedException(typeof (ArgumentNullException))]

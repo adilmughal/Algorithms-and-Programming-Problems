@@ -5,10 +5,13 @@ namespace ProgrammingProblems.TreesNGraphs
     public class SumUpBinaryTreeNode
     {
         public SumUpBinaryTreeNode()
-        {}
+        {
+        }
 
         public SumUpBinaryTreeNode(int value)
-        {   Value = value;  }
+        {
+            Value = value;
+        }
 
         public int Value { get; set; }
         public int SumUp { get; set; }

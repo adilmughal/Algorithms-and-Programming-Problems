@@ -1,6 +1,4 @@
-﻿using System;
-using NUnit.Framework;
-using ProgrammingProblems;
+﻿using NUnit.Framework;
 
 namespace ProgrammingProblems.Test
 {

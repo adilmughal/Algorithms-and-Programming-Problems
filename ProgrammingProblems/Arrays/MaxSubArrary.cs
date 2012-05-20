@@ -3,7 +3,7 @@
     internal class MaxSubArrary
     {
         public int FindMaximumSubarray(int[] input)
-        {   
+        {
             int sum = 0;
             int maxSum = 0;
 
@@ -14,7 +14,7 @@
                 {
                     maxSum = sum;
                 }
- 
+
                 if (sum < 0)
                     sum = 0;
             }

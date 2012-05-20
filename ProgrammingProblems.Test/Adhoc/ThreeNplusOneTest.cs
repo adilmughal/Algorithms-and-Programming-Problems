@@ -2,9 +2,8 @@
 using ProgrammingProblems;
 
 [TestFixture]
-public partial class ThreeNplusOneTest
+public class ThreeNplusOneTest
 {
-
     [Test]
     public void ThreeNplusOneTest1()
     {

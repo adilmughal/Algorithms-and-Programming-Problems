@@ -57,12 +57,10 @@ namespace ProgrammingProblems
                     result = result + x;
                 }
                 x = x << 1;
-                factor = factor>> 1;
+                factor = factor >> 1;
             }
 
             return result;
         }
     }
-
-
 }

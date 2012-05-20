@@ -19,7 +19,7 @@ namespace DataStructure
         public LinkedListNode Insert(string title)
         {
             // Creates a Node, sets its Node to the first item and then makes this the first item in the list.
-            LinkedListNode node = new LinkedListNode(title);
+            var node = new LinkedListNode(title);
             node.Next = _first;
             _first = node;
             return node;
@@ -37,7 +37,7 @@ namespace DataStructure
         public override string ToString()
         {
             LinkedListNode currentNode = _first;
-            StringBuilder builder = new StringBuilder();
+            var builder = new StringBuilder();
 
             while (currentNode != null)
             {

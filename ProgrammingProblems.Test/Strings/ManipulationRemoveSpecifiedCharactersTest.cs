@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using ProgrammingProblems;
 
 namespace ProgrammingProblems.Test
 {
