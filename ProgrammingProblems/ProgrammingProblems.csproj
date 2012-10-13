@@ -34,19 +34,22 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adhoc\ThreeNplusOne.cs" />
-    <Compile Include="Arrays\MaxSubArrary.cs" />
-    <Compile Include="Numeric\DivideWithoutOperator.cs" />
-    <Compile Include="Numeric\Fibonacci.cs" />
-    <Compile Include="Numeric\MultiplyWithoutOperator.cs" />
+    <Compile Include="QueueUsingTwoStacks.cs" />
+    <Compile Include="ThreeNplusOne.cs" />
+    <Compile Include="UnionFind.cs" />
+    <Compile Include="MaxSubArrary.cs" />
+    <Compile Include="FindMergePointOfTwoLinkedList.cs" />
+    <Compile Include="DivideWithoutOperator.cs" />
+    <Compile Include="Fibonacci.cs" />
+    <Compile Include="MultiplyWithoutOperator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sorting\InsertionSort.cs" />
-    <Compile Include="Sorting\MergeSort.cs" />
-    <Compile Include="Strings\HasUniqueCharacters.cs" />
-    <Compile Include="Strings\Manipulation.cs" />
-    <Compile Include="Strings\RegexMatch.cs" />
-    <Compile Include="TreesNGraphs\BinaryTreeTraversal.cs" />
-    <Compile Include="TreesNGraphs\SubTreeWithLargestSum.cs" />
+    <Compile Include="InsertionSort.cs" />
+    <Compile Include="MergeSort.cs" />
+    <Compile Include="HasUniqueCharacters.cs" />
+    <Compile Include="Manipulation.cs" />
+    <Compile Include="RegexMatch.cs" />
+    <Compile Include="BinaryTreeTraversal.cs" />
+    <Compile Include="SubTreeWithLargestSum.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataStructure\DataStructure.csproj">
@@ -54,9 +57,7 @@
       <Name>DataStructure</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Searching\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
