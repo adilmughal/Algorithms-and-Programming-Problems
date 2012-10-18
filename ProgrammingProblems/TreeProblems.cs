@@ -4,7 +4,7 @@ using DataStructure;
 
 namespace ProgrammingProblems
 {
-    internal class TreeProblems
+    public class TreeProblems
     {
         public static void PreOrderTraversal(BinaryTreeNode node)
         {
