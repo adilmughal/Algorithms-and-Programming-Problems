@@ -7,14 +7,14 @@ namespace ProgrammingProblems.Test
     ///  to contain all RegexMatchTest Unit Tests
     ///</summary>
     [TestFixture]
-    public class RegexMatchTest
+    public class RegexProblemsTest
     {
         //[Test]
         //public void MatchTestDigitOnlyWithDigitRegex()
         //{
         //    char[] input = "1231233254465".ToCharArray();
         //    char[] regex = "\\d+".ToCharArray();
-        //    Assert.AreEqual(true, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(true, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -22,7 +22,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "ab1".ToCharArray();
         //    char[] regex = "ab\\d+".ToCharArray();
-        //    Assert.AreEqual(true, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(true, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -30,7 +30,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "ab1c2".ToCharArray();
         //    char[] regex = "ab\\dc\\d".ToCharArray();
-        //    Assert.AreEqual(true, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(true, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -39,7 +39,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "".ToCharArray();
         //    char[] regex = "adil".ToCharArray();
-        //    RegexMatch.Match(input, regex);
+        //    RegexProblems.Match(input, regex);
         //}
 
         //[Test]
@@ -47,7 +47,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "abcd".ToCharArray();
         //    char[] regex = "bc".ToCharArray();
-        //    Assert.AreEqual(true, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(true, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -55,7 +55,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "ab".ToCharArray();
         //    char[] regex = "abc".ToCharArray();
-        //    Assert.AreEqual(false, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(false, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -63,7 +63,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "ab1c".ToCharArray();
         //    char[] regex = "ab\\dc".ToCharArray();
-        //    Assert.AreEqual(true, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(true, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -71,7 +71,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "ab123c".ToCharArray();
         //    char[] regex = "ab\\d+c".ToCharArray();
-        //    Assert.AreEqual(true, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(true, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -79,7 +79,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "di".ToCharArray();
         //    char[] regex = "adil".ToCharArray();
-        //    Assert.AreEqual(false, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(false, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -87,7 +87,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "ad12il34".ToCharArray();
         //    char[] regex = "ad\\d+il\\d+".ToCharArray();
-        //    Assert.AreEqual(true, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(true, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -95,7 +95,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "ad12il".ToCharArray();
         //    char[] regex = "ad\\d\\dil".ToCharArray();
-        //    Assert.AreEqual(true, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(true, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -103,7 +103,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "++1++".ToCharArray();
         //    char[] regex = "++\\d+++".ToCharArray();
-        //    Assert.AreEqual(true, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(true, RegexProblems.Match(input, regex));
         //}
 
         //[Test]
@@ -111,7 +111,7 @@ namespace ProgrammingProblems.Test
         //{
         //    char[] input = "ab\\wc".ToCharArray();
         //    char[] regex = "ab\\wc".ToCharArray();
-        //    Assert.AreEqual(true, RegexMatch.Match(input, regex));
+        //    Assert.AreEqual(true, RegexProblems.Match(input, regex));
         //}
     }
 }

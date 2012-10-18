@@ -2,7 +2,7 @@
 
 namespace ProgrammingProblems
 {
-    public class Strings
+    public class StringProblems
     {
         public static bool HasUniqueCharacters(string input)
         {

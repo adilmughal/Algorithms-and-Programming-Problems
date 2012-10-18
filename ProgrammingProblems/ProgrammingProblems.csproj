@@ -37,15 +37,13 @@
     <Compile Include="ArrayProblems.cs" />
     <Compile Include="ArthmeticProblems.cs" />
     <Compile Include="LinkedListProblems.cs" />
-    <Compile Include="QueueUsingTwoStacks.cs" />
     <Compile Include="SortingProblems.cs" />
-    <Compile Include="UnionFind.cs" />
+    <Compile Include="StackAndQueueProblems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="HasUniqueCharacters.cs" />
+    <Compile Include="StringProblems.cs" />
     <Compile Include="Manipulation.cs" />
-    <Compile Include="RegexMatch.cs" />
+    <Compile Include="RegexProblems.cs" />
     <Compile Include="TreeProblems.cs" />
-    <Compile Include="SubTreeWithLargestSum.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataStructure\DataStructure.csproj">

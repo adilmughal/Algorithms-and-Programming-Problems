@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ProgrammingProblems
 {
-    public class RegexMatch
+    public class RegexProblems
     {
         public static bool Match(char[] input, char[] regex)
         {

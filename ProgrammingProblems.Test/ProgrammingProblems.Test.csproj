@@ -50,16 +50,11 @@
     <Compile Include="ArrayProblemsTest.cs" />
     <Compile Include="ArthmeticProblemsTest.cs" />
     <Compile Include="LinkedListProblemsTest.cs" />
-    <Compile Include="QueueWithTwoStacksTest.cs" />
-    <Compile Include="RemoveDuplicateFromUnsortedList.cs" />
+    <Compile Include="StackAndQueueProblemsTest.cs" />
     <Compile Include="SortingProblemsTest.cs" />
-    <Compile Include="UnionFindTest.cs" />
-    <Compile Include="HasUniqueCharactersTest.cs" />
-    <Compile Include="ManipulationRemoveSpecifiedCharactersTest.cs" />
-    <Compile Include="RegexMatchTest.cs" />
-    <Compile Include="CharacterSearchTest.cs" />
+    <Compile Include="StringProblemsTest.cs" />
+    <Compile Include="RegexProblemsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextSearchNaiveSearch2Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataStructure\DataStructure.csproj">

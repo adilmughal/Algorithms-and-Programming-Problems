@@ -4,13 +4,13 @@ using NUnit.Framework;
 namespace ProgrammingProblems.Test
 {
     [TestFixture]
-    internal class QueueWithTwoStacksTest
+    internal class StackAndQueueProblemsTest
     {
         [Test]
         [ExpectedException(typeof (Exception))]
         public void QueueUsingTwoStacksExceptionTest()
         {
-            var queue = new QueueUsingTwoStacks<char>(10);
+            var queue = new StackAndQueueProblems.QueueUsingTwoStacks<char>(10);
             queue.Enqueue('a');
             queue.Dequeue();
             queue.Dequeue();
@@ -19,7 +19,7 @@ namespace ProgrammingProblems.Test
         [Test]
         public void QueueUsingTwoStacksPositiveTest()
         {
-            var queue = new QueueUsingTwoStacks<char>(10);
+            var queue = new StackAndQueueProblems.QueueUsingTwoStacks<char>(10);
             queue.Enqueue('a');
             queue.Enqueue('b');
             queue.Enqueue('c');

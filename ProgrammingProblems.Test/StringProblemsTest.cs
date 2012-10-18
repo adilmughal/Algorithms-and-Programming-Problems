@@ -3,13 +3,13 @@
 namespace ProgrammingProblems.Test
 {
     [TestFixture]
-    public partial class StringsTest
+    public class StringProblemsTest
     {
         [Test]
         public void HasUniqueCharactersTest1()
         {
             string input = "adila";
-            bool result = Strings.HasUniqueCharacters(input);
+            bool result = StringProblems.HasUniqueCharacters(input);
             Assert.AreEqual(false, result);
         }
     }

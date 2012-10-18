@@ -7,6 +7,8 @@ namespace ProgrammingProblems
 {
     public class ArthmeticProblems
     {
+        #region Three N plus One
+
         public static int ThreeNplusOne(int i, int j)
         {
             int maximumCycleLength = 0;
@@ -27,17 +29,20 @@ namespace ProgrammingProblems
                 int s = k;
                 while (s != 1)
                 {
-                    if (s%2 == 0)
-                        s = s/2;
+                    if (s % 2 == 0)
+                        s = s / 2;
                     else
-                        s = (3*s) + 1;
+                        s = (3 * s) + 1;
                     currentCycleLength++;
                 }
                 if (currentCycleLength > maximumCycleLength)
                     maximumCycleLength = currentCycleLength;
             }
             return maximumCycleLength;
-        }
+        } 
+        #endregion
+
+        #region Multiply without Operator
 
         public static double MultiplyWithoutOperator(int x, int factor)
         {
@@ -64,7 +69,6 @@ namespace ProgrammingProblems
 
             return result;
         }
-
 
         public static double MultiplyWithoutOperatorV2(int x, int factor)
         {
@@ -98,6 +102,10 @@ namespace ProgrammingProblems
             return result;
         }
 
+        #endregion
+
+        #region Divide without Operator
+
         public static int DivideWithoutOperator(int numerator, int divider)
         {
             if (numerator == 0)
@@ -125,12 +133,16 @@ namespace ProgrammingProblems
             return quotient;
         }
 
+        #endregion
+
+        #region Fibonacci
+
         public static int[] IterativeFibonacci(int max)
         {
             if (max < 1)
-                return new[] {0};
+                return new[] { 0 };
 
-            var result = new List<int>(new[] {0, 1});
+            var result = new List<int>(new[] { 0, 1 });
 
             int n = 2;
 
@@ -147,60 +159,39 @@ namespace ProgrammingProblems
 
         public static int RecursiveFibonacci(int n)
         {
+            if (n < 0)
+                throw new ArgumentException("n");
+
             if (n == 0 || n == 1)
                 return n;
 
-            else if (n > 1)
-                return RecursiveFibonacci(n - 1) + RecursiveFibonacci(n - 2);
-
-            else return -1;
+            return RecursiveFibonacci(n - 1) + RecursiveFibonacci(n - 2);
         }
 
+        #endregion
+
+        #region Greatest Common Divisor (GCD)
+        
         public static int GreatestCommonDivisior(int m, int n)
         {
             //Used euclid algorithm to find out GCD or GCF
             int remainder = -1;
             while (remainder != 0)
             {
-                remainder = m%n;
+                remainder = m % n;
                 m = n;
                 n = remainder;
             }
             return m;
-        }
+        } 
+
+        #endregion
+
+        #region Least Common Multiple (LCM)
 
         public static int LeastCommonMultiple(int m, int n)
         {
-            return ((m*n)/GreatestCommonDivisior(m, n));
-        }
-
-        public static bool IsPrime(int n)
-        {
-            for (int i = 2; i <= n; i++)
-            {
-                if (n%i == 0)
-                {
-                    if (i == n)
-                        return true;
-                    else
-                        return false;
-                }
-            }
-            return false;
-        }
-
-        public static int[] PrimeFactors(int n)
-        {
-            var factors = new List<int>();
-            for (int i = 2; i <= n; i++)
-            {
-                while (n%i == 0 && IsPrime(i))
-                {
-                    factors.Add(i);
-                    n = n/i;
-                }
-            }
-            return factors.ToArray();
+            return ((m * n) / GreatestCommonDivisior(m, n));
         }
 
         public static int LeastCommonMultipleByPrimeFactorization(int m, int n)
@@ -232,7 +223,7 @@ namespace ProgrammingProblems
                 }
 
                 int numberOfCount = mfactorCount > nfactorCount ? mfactorCount : nfactorCount;
-                result = factor*result*numberOfCount;
+                result = factor * result * numberOfCount;
             }
 
             return result;
@@ -249,6 +240,68 @@ namespace ProgrammingProblems
                     hash.Add(factor, 1);
             }
             return hash;
+        }
+
+        #endregion
+
+        public static bool IsPrime(int n)
+        {
+            for (int i = 2; i <= n; i++)
+            {
+                if (n % i == 0)
+                {
+                    if (i == n)
+                        return true;
+                    else
+                        return false;
+                }
+            }
+            return false;
+        }
+
+        public static int[] PrimeFactors(int n)
+        {
+            var factors = new List<int>();
+            for (int i = 2; i <= n; i++)
+            {
+                while (n % i == 0)
+                {
+                    factors.Add(i);
+                    n = n / i;
+                }
+            }
+            return factors.ToArray();
+        }
+
+        public class UnionFind
+        {
+            private const int N = 10;
+            private readonly int[] _idArray;
+
+            public UnionFind()
+            {
+                _idArray = new int[N];
+                for (int index = 0; index < N; index++)
+                {
+                    _idArray[index] = index;
+                }
+            }
+
+            public bool IsConnected(int p, int q)
+            {
+                return _idArray[p] == _idArray[q];
+            }
+
+            public void Union(int p, int q)
+            {
+                int pId = _idArray[p];
+                int qId = _idArray[q];
+                for (int index = 0; index < N; index++)
+                {
+                    if (_idArray[index] == qId)
+                        _idArray[index] = pId;
+                }
+            }
         }
     }
 }
