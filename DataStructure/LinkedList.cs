@@ -2,41 +2,77 @@
 
 namespace DataStructure
 {
-    public class LinkedList
+    public class LinkedList<T>
     {
-        private LinkedListNode _first;
+        private LinkedListNode<T> _root;
 
         public LinkedList()
         {
-            _first = null;
+            _root = null;
+        }
+
+        public LinkedListNode<T> Root
+        {
+            get { return _root; }
         }
 
         public bool IsEmpty
         {
-            get { return _first == null; }
+            get { return _root == null; }
         }
 
-        public LinkedListNode Insert(string title)
+        public LinkedListNode<T> Insert(T item)
         {
-            // Creates a Node, sets its Node to the first item and then makes this the first item in the list.
-            var node = new LinkedListNode(title);
-            node.Next = _first;
-            _first = node;
+            // Creates a Node, sets its Node to the first item and 
+            // then makes this the first item in the list.
+            var node = new LinkedListNode<T>(item);
+            node.Next = _root;
+            _root = node;
             return node;
         }
 
-        public LinkedListNode Delete()
+        public LinkedListNode<T> Delete()
         {
             // Gets the first item, and then this to be the one it is linked forward to
-            LinkedListNode temp = _first;
-            if (_first != null)
-                _first = _first.Next;
+            LinkedListNode<T> temp = _root;
+            if (_root != null)
+                _root = _root.Next;
             return temp;
+        }
+
+        public int Count
+        {
+            get
+            {
+                int count = 0;
+                LinkedListNode<T> currentNode = _root;
+                while (currentNode != null)
+                {
+                    count++;
+                    currentNode = currentNode.Next;
+                }
+                    
+                return count;  
+            }
+            
+        }
+
+        public T[] ToArray()
+        {
+            int n = this.Count;
+            LinkedListNode<T> currentNode = _root;
+            T[] array = new T[n];
+            for (int index=0; index < n; index++)
+            {
+                array[index] = currentNode.Data;
+                currentNode = currentNode.Next;
+            }
+            return array;
         }
 
         public override string ToString()
         {
-            LinkedListNode currentNode = _first;
+            LinkedListNode<T> currentNode = _root;
             var builder = new StringBuilder();
 
             while (currentNode != null)
@@ -46,5 +82,7 @@ namespace DataStructure
             }
             return builder.ToString();
         }
+
+
     }
 }

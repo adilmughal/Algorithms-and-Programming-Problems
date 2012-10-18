@@ -1,9 +1,9 @@
-﻿    using System.Diagnostics;
+﻿using System.Diagnostics;
 using DataStructure;
 
-namespace ProgrammingProblems.TreesNGraphs
+namespace ProgrammingProblems
 {
-    internal class BinaryTreeTraversal
+    internal class TreeProblems
     {
         public static void PreOrderTraversal(BinaryTreeNode node)
         {

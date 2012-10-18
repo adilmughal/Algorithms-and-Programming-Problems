@@ -1,8 +1,8 @@
-﻿namespace ProgrammingProblems.Arrays
+﻿namespace ProgrammingProblems
 {
-    internal class MaxSubArrary
+    public class ArrayProblems
     {
-        public int FindMaximumSubarray(int[] input)
+        public static int FindMaximumSubarray(int[] input)
         {
             int sum = 0;
             int maxSum = 0;

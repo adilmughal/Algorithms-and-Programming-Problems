@@ -1,18 +1,18 @@
 namespace DataStructure
 {
-    public class LinkedListNode
+    public class LinkedListNode<T>
     {
-        public LinkedListNode(string data)
+        public LinkedListNode(T data)
         {
             Data = data;
         }
 
-        public string Data { get; set; }
-        public LinkedListNode Next { get; set; }
+        public T Data { get; set; }
+        public LinkedListNode<T> Next { get; set; }
 
         public override string ToString()
         {
-            return Data;
+            return Data.ToString();
         }
     }
 }

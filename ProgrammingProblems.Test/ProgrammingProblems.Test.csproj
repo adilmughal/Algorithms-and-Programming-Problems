@@ -47,15 +47,13 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayProblemsTest.cs" />
+    <Compile Include="ArthmeticProblemsTest.cs" />
+    <Compile Include="LinkedListProblemsTest.cs" />
     <Compile Include="QueueWithTwoStacksTest.cs" />
-    <Compile Include="ThreeNplusOneTest.cs" />
+    <Compile Include="RemoveDuplicateFromUnsortedList.cs" />
+    <Compile Include="SortingProblemsTest.cs" />
     <Compile Include="UnionFindTest.cs" />
-    <Compile Include="SortingTest.cs" />
-    <Compile Include="MultiplyWithoutOperatorTest.cs" />
-    <Compile Include="DivideWithoutOperatorTest.cs" />
-    <Compile Include="FibonacciTest.cs" />
-    <Compile Include="InsertionSortTest.cs" />
-    <Compile Include="MergeSortTest.cs" />
     <Compile Include="HasUniqueCharactersTest.cs" />
     <Compile Include="ManipulationRemoveSpecifiedCharactersTest.cs" />
     <Compile Include="RegexMatchTest.cs" />

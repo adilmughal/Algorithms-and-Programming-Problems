@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace ProgrammingProblems.TreesNGraphs
+namespace ProgrammingProblems
 {
     public class SumUpBinaryTreeNode
     {
