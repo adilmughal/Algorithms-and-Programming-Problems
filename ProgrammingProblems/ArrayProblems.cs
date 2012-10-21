@@ -25,12 +25,12 @@ namespace ProgrammingProblems
             return maxSum;
         }
 
-        public static IEnumerable<TSource> ArrayIntersection<TSource>(IEnumerable<TSource> first , IEnumerable<TSource> second)
+        public static IEnumerable<TSource> IsIntersection<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second)
         {
-           if (first == null)
-               throw new ArgumentNullException("first");
-           if (second == null)
-               throw new ArgumentNullException("second");
+            if (first == null)
+                throw new ArgumentNullException("first");
+            if (second == null)
+                throw new ArgumentNullException("second");
 
             HashSet<TSource> hashSet = new HashSet<TSource>();
 
@@ -42,7 +42,7 @@ namespace ProgrammingProblems
                     yield return item;
         }
 
-        public static int[] ArrayIntersectionQuadratic(int[] first, int[] second)
+        public static int[] IsIntersectionQuadratic(int[] first, int[] second)
         {
             if (first == null)
                 throw new ArgumentNullException("first");
@@ -61,10 +61,54 @@ namespace ProgrammingProblems
                     if (first[i] == second[j])
                         if (!result.Contains(first[i]))
                             result.Add(first[i]);
-                } 
+                }
             }
 
             return result.ToArray();
+        }
+
+        public static bool IsPermutation(int[] first, int[] second)
+        {
+            if (first.Length != second.Length)
+                return false;
+
+            Array.Sort(first);
+            Array.Sort(second);
+
+            for (int i = 0; i < first.Length; i++)
+                if (first[i] != second[i])
+                    return false;
+
+            return true;
+        }
+
+        public static bool IsPermutationv2(int[] first, int[] second)
+        {
+            if (first.Length != second.Length)
+                return false;
+
+            if (first.Length == 1)
+                return first[0] == second[0];
+
+            Dictionary<int, int> hashCount = new Dictionary<int, int>(first.Length);
+
+            foreach (int item in first)
+                if (hashCount.ContainsKey(item))
+                    hashCount[item] = hashCount[item] + 1;
+                else
+                    hashCount[item] = 1;
+
+            foreach (int item in second)
+                if (hashCount.ContainsKey(item))
+                    hashCount[item] = hashCount[item] - 1;
+                else
+                    return false;
+
+            foreach (KeyValuePair<int, int> item in hashCount)
+                if (item.Value != 0)
+                    return false;
+
+            return true;
         }
     }
 }

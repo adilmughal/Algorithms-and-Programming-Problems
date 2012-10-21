@@ -24,12 +24,21 @@ namespace ProgrammingProblems.Test
         }
 
         [Test]
+        public void MergeSortPositiveTest()
+        {
+            var input = new[] { 2, 5, 3, 1 };
+            var expected = new[] { 1, 2, 3, 5 };
+            SortingProblems.MergeSort(input);
+            CollectionAssert.AreEqual(expected, input);
+        }
+
+        [Test]
         public void MergeSortTestHappyFlow()
         {
             var input = new[] { 2, 5, 3, 1, 7, 4, 9 };
             var expected = new[] { 1, 2, 3, 4, 5, 7, 9 };
-            int[] actual = SortingProblems.MergeSort(input);
-            CollectionAssert.AreEqual(expected, actual);
+            SortingProblems.MergeSort(input);
+            CollectionAssert.AreEqual(expected, input);
         }
 
         [Test]
@@ -37,8 +46,8 @@ namespace ProgrammingProblems.Test
         {
             var input = new[] { 2, 5, 3 };
             var expected = new[] { 2, 3, 5 };
-            int[] actual = SortingProblems.MergeSort(input);
-            CollectionAssert.AreEqual(expected, actual);
+            SortingProblems.MergeSort(input);
+            CollectionAssert.AreEqual(expected, input);
         }
 
         [Test]
@@ -46,15 +55,8 @@ namespace ProgrammingProblems.Test
         {
             var input = new[] { 2, 3, 1, -7, 4, 9 };
             var expected = new[] { -7, 1, 2, 3, 4, 9 };
-            int[] actual = SortingProblems.MergeSort(input);
-            CollectionAssert.AreEqual(expected, actual);
-        }
-
-        [Test]
-        public void GroupSortPositiveTest()
-        {
-            var input = new[] {'B', 'R', 'B', 'G', 'G', 'R'};
-            CollectionAssert.AreEqual(new[] {'B', 'B', 'R', 'R', 'G', 'G'}, SortingProblems.GroupSort(input));
+            SortingProblems.MergeSort(input);
+            CollectionAssert.AreEqual(expected, input);
         }
 
         [Test]
