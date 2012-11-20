@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="ArrayProblems.cs" />
     <Compile Include="ArthmeticProblems.cs" />
+    <Compile Include="BitwiseProblems.cs" />
     <Compile Include="LinkedListProblems.cs" />
     <Compile Include="SortingProblems.cs" />
     <Compile Include="StackAndQueueProblems.cs" />
