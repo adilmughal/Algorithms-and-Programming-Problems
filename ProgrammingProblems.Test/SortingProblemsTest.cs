@@ -32,6 +32,8 @@ namespace ProgrammingProblems.Test
             CollectionAssert.AreEqual(expected, input);
         }
 
+
+
         [Test]
         public void MergeSortTestHappyFlow()
         {
@@ -56,6 +58,15 @@ namespace ProgrammingProblems.Test
             var input = new[] { 2, 3, 1, -7, 4, 9 };
             var expected = new[] { -7, 1, 2, 3, 4, 9 };
             SortingProblems.MergeSort(input);
+            CollectionAssert.AreEqual(expected, input);
+        }
+
+        [Test]
+        public void QuickSortPositiveTest()
+        {
+            var input = new[] { 2, 5, 3, 1 };
+            var expected = new[] { 1, 2, 3, 5 };
+            SortingProblems.QuickSort(input);
             CollectionAssert.AreEqual(expected, input);
         }
 
