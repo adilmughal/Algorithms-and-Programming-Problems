@@ -49,12 +49,14 @@
   <ItemGroup>
     <Compile Include="ArrayProblemsTest.cs" />
     <Compile Include="ArthmeticProblemsTest.cs" />
+    <Compile Include="BitwiseProblemsTest.cs" />
     <Compile Include="LinkedListProblemsTest.cs" />
     <Compile Include="StackAndQueueProblemsTest.cs" />
     <Compile Include="SortingProblemsTest.cs" />
     <Compile Include="StringProblemsTest.cs" />
     <Compile Include="RegexProblemsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeProblemsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataStructure\DataStructure.csproj">
