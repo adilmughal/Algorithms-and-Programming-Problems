@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using NUnit.Framework;
 
@@ -55,7 +56,8 @@ namespace ProgrammingProblems.Test
             var second = new[] { 5, 10, 0, 1 };
             Assert.True(ArrayProblems.IsPermutation(first, second));
         }
-
+        
+        
         [Test]
         public void ArrayPermutationV2PositiveTest()
         {
@@ -70,6 +72,39 @@ namespace ProgrammingProblems.Test
             var first = new[] { -11, 5, 0, 10 };
             var second = new[] { 5, 10, 0, 1 };
             Assert.False(ArrayProblems.IsPermutationv2(first, second));
+        }
+
+        [Test]
+        public void FindDuplicatePositiveTest()
+        {
+            var input = new int[] { 1, 5, 0, 10, 5, 8 };
+            var expected = new[] { 5 };
+            CollectionAssert.AreEqual(expected, ArrayProblems.FindDuplicateItems<int>(input));
+        }
+
+        [Test]
+        public void FindDuplicateBoundaryTest()
+        {
+            var input = new int[] { };
+            var expected = new int[] { };
+            CollectionAssert.AreEqual(expected, ArrayProblems.FindDuplicateItems<int>(input));
+        }
+
+        [Test]
+        public void FindSingleDuplicatePositiveTest()
+        {
+            var input = new int[] { 1, 2, 3, 2, 4 };
+            Assert.AreEqual(2, ArrayProblems.FindSingleDuplicate(input));
+
+            input = new int[] { 1, 2, 5, 3, 4, 5 };
+            Assert.AreEqual(5, ArrayProblems.FindSingleDuplicate(input));
+        }
+
+        [Test]
+        public void FindSingleDuplicateUsingSumPositiveTest()
+        {
+            var input = new int[] { 1, 2, 3, 2, 4 };
+            Assert.AreEqual(2, ArrayProblems.FindSingleDuplicateUsingSum(input));
         }
     }
 }
