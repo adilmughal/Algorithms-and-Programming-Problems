@@ -75,7 +75,7 @@ namespace ProgrammingProblems
                 return;
 
             int middle = low + (high - low) / 2;/* index of middle element */
-      
+
             MergeSort(input, low, middle);
             MergeSort(input, middle + 1, high);
             Merge(input, low, middle, high);
@@ -86,21 +86,35 @@ namespace ProgrammingProblems
             int leftCounter = low;
             int rightCounter = middle + 1;
             var resultSet = new int[high - low + 1];
-
             for (int rIndex = low; rIndex <= high; rIndex++)
             {
                 if (leftCounter > middle)
-                    resultSet[rIndex-low] = input[rightCounter++];
+                    resultSet[rIndex - low] = input[rightCounter++];
                 else if (rightCounter > high)
-                    resultSet[rIndex-low] = input[leftCounter++];
+                    resultSet[rIndex - low] = input[leftCounter++];
                 else if (input[leftCounter] < input[rightCounter])
-                    resultSet[rIndex-low] = input[leftCounter++];
+                    resultSet[rIndex - low] = input[leftCounter++];
                 else
-                    resultSet[rIndex-low] = input[rightCounter++];
+                    resultSet[rIndex - low] = input[rightCounter++];
             }
 
             for (int i = 0; i < resultSet.Length; i++)
-                input[i+low] = resultSet[i];
+                input[i + low] = resultSet[i];
+        }
+
+        public static void QuickSort(int[] input)
+        {
+            QuickSort(input, 0, input.Length - 1);
+        }
+
+        private static void QuickSort(int[] input, int low, int high)
+        {
+            if (low >= high)
+                return;
+
+            int partition = Partition(input, low, high);
+            QuickSort(input, low, partition - 1);
+            QuickSort(input, partition + 1, high);
         }
 
         public static char[] TwoColorsDutchNationalFlagSort(char[] input)
@@ -177,11 +191,33 @@ namespace ProgrammingProblems
             return input;
         }
 
-        private static void Swap<T>(T[] input, int low, int high)
+        private static void Swap<T>(T[] input, int first, int second)
         {
-            T temp = input[low];
-            input[low] = input[high];
-            input[high] = temp;
+            T temp = input[first];
+            input[first] = input[second];
+            input[second] = temp;
+        }
+
+        private static int Partition(int[] input, int low, int high)
+        {
+            int left = low + 1;
+            int right = high;
+
+            while (true)
+            {
+                while (input[low] > input[left] && left <= high)
+                    left++;
+
+                while (input[low] < input[right] && right >= low)
+                    right--;
+
+                if (left >= right)
+                    break;
+                Swap(input, left, right);
+            }
+
+            Swap(input, low, right);
+            return right;
         }
     }
 }
