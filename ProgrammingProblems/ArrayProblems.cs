@@ -43,7 +43,6 @@ namespace ProgrammingProblems
                     yield return entry.Key;
         }
 
-
         public static int FindSingleDuplicateUsingSum(int[] input)
         {
             if (input == null)
