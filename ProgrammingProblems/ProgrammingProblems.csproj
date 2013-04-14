@@ -47,6 +47,10 @@
     <Compile Include="TreeProblems.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{f8e3b7b6-65bd-4448-9ab5-eedb8d7c6d5f}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataStructure\DataStructure.csproj">
       <Project>{4D1A0394-5A71-4FFC-A679-D164908F36B1}</Project>
       <Name>DataStructure</Name>
