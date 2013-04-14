@@ -1,7 +1,7 @@
 Algorithms and Programming Problems 
 ====================================
 
-This project demostrates implementation of many well known programming problems and algorithms. 
+This project demostrates implementation of many well known data structures, algorithms and programming problems. 
 
 Platform and Language
 ---------------------
@@ -12,10 +12,23 @@ NUnit for unit testing
 Content
 --------
 
+<h3>Data Structure</h3>
+
+	- Stack
+	- Queue
+	- Priority Queue (unordered)
+	- LinkedList
+	- Binary Search Tree
+
+<h3>Programming Problems</h3>
+
 <ul>
-	<li>Array Problems</li>
+	<li>Array/Collection Problems</li>
 		<ul>
 			<li> Maximum Sub Array </li>
+			<li> Find Duplicate Items </li>
+			<li> Find Single Duplicate in N seqential items </li>
+			<li> Is Permutation </li>
 		</ul>
 	<li>Arthmetic Problems</li>
 		<ul>
@@ -35,6 +48,20 @@ Content
 		<ul>
 			<li> Insertion Sort </li>
 			<li> Merge Sort </li>
-			<li> Dutch National Flag Sort </li>
+			<li> Dutch National Flag Sort (two and three colors)</li>
+		</ul>
+	<li>Stack and Queue Problems</li>
+		<ul>
+			<li> Queue using Two Stacks </li>
+		</ul>
+	<li>String Problems</li>
+		<ul>
+			<li> Has Unique Characters </li>
+			<li> Replace Space </li>
+			<li> Perform Count Compression </li>
 		</ul>
 </ul>
+
+License
+-------
+The project is licensed under MIT open source license. See license.txt file.
